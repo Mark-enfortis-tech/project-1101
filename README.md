@@ -1,6 +1,6 @@
 # Enfortis Technologies Project-1101
 
-## Mobile app developmental server
+## Mobile App Developmental Test Server
 
 ***
 
@@ -16,20 +16,28 @@ mobile app developer for testing API endpoints during the early development phas
 ### AWS host URL
 n/a
 
-#### API Reference
+### API Reference
 
     GET /login
-
         Query Parameters:
             key: awt_key
-            value: aws_token_value
-        Successful Response Codes
+            value: AWT object
+        Successful Response
             Code: 200: 
+        Error Response 
+            Code: 401    Body: Authentication Failed
+
+
+    GET /userWord
+        Query Parameters:
+            key: word
+            value: search word
+        Successful Response
+            Code: 200   Body: word definition
+        Error Response 
+            Code: 404    Body: not found
             
 
-    Error Codes
-        Code: 404 
-        TBD
 
 #### Additional Activities:
 
